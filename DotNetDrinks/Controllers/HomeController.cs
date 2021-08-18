@@ -22,6 +22,11 @@ namespace DotNetDrinks.Controllers
         {
             return View();
         }
+        public IActionResult Contact()
+        {
+            return View("Contact");
+        }
+
 
         public IActionResult Privacy()
         {
