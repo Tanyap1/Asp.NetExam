@@ -35,6 +35,16 @@
                 </td>
                 <td>
                     @* ADD IMG HERE *@
+
+                    @if (!String.IsNullOrEmpty(item.Product.Image))
+                    {
+                        <img src="/img/products/@item.Product.Image" alt="Logo for @item.Product.Image" onclick="javascript:window.open(bigImageUrl.jpg)"/>
+                    }
+                    else
+                    {
+                        <img src="~/images/cc.jpg" alt="placeholder logo" />
+                    }
+
                 </td>
                 @* As a general rule, numbers are right-aligned when shown in a table *@
                 <td class="text-right">
